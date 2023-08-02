@@ -1,5 +1,5 @@
 
-:::note[Ou envoyer les postes ?]
+:::note[Ou envoyer les posts ?]
 Si vous souhaitez contribuer, merci de passer par le [Discord](https://discord.gg/vrchatfrance), un forum à était mis en place pour permettre de créer des postes.
 :::
 ## Création de tutoriels sur Discord 
@@ -155,7 +155,7 @@ Pour insérer une ligne horizontale, utilisez trois traits d'union (`---`) ou tr
 title: Créer son propre tuto
 description: Bien configurer le tutoriel pour implémentation sur le site de vrchat france
 ---
-:::note[Ou envoyer les postes ?]
+:::note[Ou envoyer les posts ?]
 Si vous souhaitez contribuer, merci de passer par le [Discord](https://discord.gg/vrchatfrance), un forum à était mis en place pour permettre de créer des postes.
 :::
 :::note[Pourquoi faire le tutos de cette manière]
