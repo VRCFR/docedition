@@ -1,0 +1,29 @@
+
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import CssButton from "../../components/CssButton.astro";
+import DiscordButton from "../../components/DiscordButton.astro";
+
+## Ce qu'il faut savoir 
+
+<CardGrid stagger>
+  <Card title="Unity" icon="pencil">
+    Le moteur de VRChat est actuellement Unity version 2019.4.31f1. Mais faites attention, depuis récemment, VRChat tente de changer la version de l'éditeur. Rester à l'affut !
+    <a class="text-decoration:none" href="https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup.exe"><CssButton text="Télécharger Unity Hub"></CssButton></a>
+  </Card>
+  <Card title="VRChat SDK" icon="add-document">
+    Depuis l'ajout de Creator Companion par VRChat, télécharger le SDK n'a jamais était aussi simple ! C'est un éléments essentiels pour créer du contenue sur le jeu.
+    <a class="text-decoration:none" href="https://vrchat.com/download/vcc"><CssButton text="Télécharger Creator Companion"></CssButton></a>  
+  </Card>
+  <Card title="UdonSharp" icon="setting">
+    Créer par la communautée, pour la communautée. Très utilisée pour le scripting de mondes vrchat
+  </Card>
+  <Card title="Et tout le reste ..." icon="open-book">
+    N'hésitez pas à venir sur le serveur discord de VRChat France !
+    <DiscordButton url="https://discord.gg/vrchatfrance" text="Rejoindre"></DiscordButton>
+  </Card>
+  <Card title="Blender" icon="open-book">
+    Très utile pour donnée vie à vos projets 3D!
+    <a class="text-decoration:none" href="https://www.blender.org/download/"><CssButton text="Télécharger Blender"></CssButton></a>  
+  </Card>
+</CardGrid>

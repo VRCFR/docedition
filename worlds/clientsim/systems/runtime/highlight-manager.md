@@ -1,0 +1,8 @@
+
+
+# HighlightManager
+
+Le HighlightManager prendra un objet et affichera un effet de surbrillance pour cet objet. Ce système enveloppe la classe HighlightFX de VRChat. HighlightFX ne prend qu'un seul renderer, tandis que le HighlightManager prend un GameObject. Conformément à la façon dont VRChat gère la mise en évidence des objets, tous les renderers de l'objet et de ses enfants sont utilisés pour la mise en évidence. Les renderers qui sont désactivés, qui ont un maillage null ou qui font partie d'un lot statique sont ignorés. Si un objet n'a aucun renderer valide, alors un Proxy de mise en surbrillance est utilisé en fonction du premier collider sur l'objet. Le Proxy de mise en surbrillance copie les valeurs de transformation du maillage d'origine et applique également la taille et l'échelle du collider pour donner l'impression que le collider est mis en surbrillance. Le HighlightManager est utilisé pour visualiser les résultats du système PlayerRaycaster. Il n'y a pas de limite fixée au nombre d'objets qui peuvent être mis en évidence, mais on s'attend à ce que seuls 2 objets soient mis en évidence à la fois via ClientSim, un objet par main du joueur. Le HighlightManager se connecte à l'API VRCSDK pour InputManager.EnableObjectHighlight. Cependant, ce hook ne prend en compte que les renderers et ne suit pas toutes les étapes consistant à trouver des objets enfants et à créer des proxys.
+
+> [!NOTE]
+> Le HighlightManager montre actuellement uniquement un aperçu de la façon dont l'objet apparaîtra sur Quest. Un style correspondant aux systèmes Windows est à venir.

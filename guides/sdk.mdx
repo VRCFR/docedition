@@ -1,0 +1,136 @@
+
+
+import LinkButton from "../../../components/LinkButton.astro"
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+## Prérequis & Téléchargement
+
+Il existe diverses façons de télécharger le SDK VRChat.
+
+Le Creator Companion est capable d'installer automatiquement l'Éditeur Unity, le SDK Worlds et le SDK Avatars pour vous.
+En alternative, vous avez la possibilité d'utiliser un de leurs projets modèles disponibles sur GitHub. Si vous n'optez pas pour l'utilisation du Creator Companion, il vous sera nécessaire de télécharger aussi la version actuelle de Unity. Ils recommandent fortement l'usage d'Unity Hub pour le téléchargement de Unity, en cliquant sur le bouton ci-dessous.
+
+<LinkButton link="https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup.exe" name="Télécharger Unity Hub" />
+<LinkButton link="https://vrchat.com/download/vcc" name="Télécharger VCC" />
+
+## Étape 0 - Installation d'Unity
+
+Si vous disposez déjà d'Unity en fonctionnement, vous pouvez directement passer à l'étape 1. Le Creator Companion se charge automatiquement de l'installation d'Unity pour vous.
+
+Si vous préférez installer Unity vous-même, rendez-vous sur la page des Versions d'Unity Prises en Charge actuellement, et installez la version d'Unity supportée par VRChat, idéalement via Unity Hub.
+
+## Étape 1 - Création d'un Projet
+
+Pour ce premier projet, il sera supposé que vous concevez du contenu pour PC Windows. Si vous êtes à la recherche du processus pour créer du contenu VRChat sur Quest, consultez la section Configuration d'Unity pour la Création de Contenu Quest.
+
+La manière la plus simple de créer un projet préconfiguré est d'utiliser le Creator Companion de VRChat ! Il est fortement recommandé d'utiliser le Creator Companion de VRChat à cette fin. Si vous ne l'utilisez pas, vous devrez accomplir plusieurs étapes supplémentaires susceptibles d'entraîner des erreurs.
+
+Voici quelques conseils rapides :
+
+- Enregistrez vos projets sur un disque de stockage de masse disposant d'un espace suffisant, car les projets Unity peuvent prendre beaucoup de place, surtout si vous utilisez un logiciel de versionnage.
+- N'utilisez pas un seul projet pour de nombreux avatars ou mondes différents. Cela rendra considérablement plus complexe les futures migrations.
+- Si vous savez utiliser un logiciel de contrôle de version comme Git ou Plastic SCM, faites-le ! Cela rend nettement plus facile l'annulation des modifications qui endommagent votre projet.
+- Si vous ne savez pas comment les utiliser, vous devriez apprendre ! Ils sont vraiment utiles. Malheureusement, un tutoriel Git est largement au-delà du cadre de notre documentation 😰
+- Vous pouvez créer un projet manuellement si vous le souhaitez, mais vous devrez tout de même utiliser le Creator Companion ultérieurement pour installer le SDK (à moins que vous n'ayez commencé avec l'un de leurs dépôts de modèles).
+
+Si vous utilisez Unity Hub :
+
+1. Ouvrez Unity Hub (ou simplement l'éditeur si vous avez opté pour cette option).
+2. Créez un nouveau projet, choisissez le mode 3D et enregistrez-le.
+3. Ne faites pas usage de HDRP ou URP. Nous le l'utiliseront pas.
+
+## Étape 2 - Ouvrez votre Projet
+
+Peu importe la manière dont vous l'avez créé, vous pouvez désormais ouvrir votre projet. Si votre projet n'est pas listé, cliquez sur "Ajouter" dans l'écran du projet et sélectionnez-le. Si vous utilisez Unity Hub, cliquez sur "Ouvrir" en haut à droite, puis choisissez le répertoire où votre projet est localisé.
+
+Une fois le projet ouvert, vérifiez la barre de titre pour vous assurer qu'elle se termine par "PC, Mac & Linux Standalone". Si ce n'est pas le cas, allez dans Fichier > Paramètres de construction..., sélectionnez "PC, Mac & Linux Standalone", puis cliquez sur "Basculer la plateforme" en bas à gauche.
+
+Si vous concevez du contenu pour VRChat pour Meta Quest, vous devez aussi le créer pour Android. Consultez leur documentation Android pour plus de détails.
+
+## _(Facultatif)_ Étape 3 - Installation du SDK
+
+Si vous n'avez pas utilisé le Creator Companion pour configurer votre projet, il vous faudra installer le SDK. Faites-le à travers le Creator Companion de VRChat.
+
+
+## Étape 4 - Connexion
+
+Pour utiliser le SDK, il vous sera nécessaire de vous connecter. Pour ce faire, rendez-vous dans VRChat SDK > Afficher le panneau de contrôle > Authentification. Vous pouvez vous connecter à votre compte VRChat à partir de là.
+
+N'oubliez pas que vous devez disposer d'un compte VRChat d'au moins le rang de confiance "Nouvel Utilisateur" pour télécharger du contenu. Il n'est pas possible d'utiliser un compte Steam, Oculus ou Viveport pour télécharger du contenu.
+
+## Qu'est-ce qui suit ?
+
+Votre projet est prêt ! Vous pouvez passer à la création de mondes ou à la création d'avatars.
+
+<Tabs>
+  <TabItem label="Mise à jour du SDK">Si vous avez besoin de mettre à jour votre SDK, il est important que vous suiviez ces étapes pour que la mise à jour se déroule correctement et que vous n'ayez pas de fichiers obsolètes ou en conflit.</TabItem>
+  <TabItem label="Versionning (Git)">Si vous savez comment l'utiliser, l'utilisation d'un logiciel de contrôle de version comme [Git](https://git-scm.com/) peut s'avérer bénéfique pour la gestion de votre projet. Vous n'avez pas besoin de télécharger votre dépôt sur Github ou un service similaire pour profiter des avantages du contrôle de version. Créez une sauvegarde avant de mettre à jour les SDK, par mesure de précaution.</TabItem>
+  <TabItem label="VRChat Creator Companion">Mettre à jour votre SDK est incroyablement facile avec le VCC. Consultez la documentation du [Creator Companion de VRChat](/guides/demarrer/) pour apprendre à l'utiliser !</TabItem>
+  <TabItem label="Migration vers le VCC">Si vous souhaitez apprendre comment migrer votre projet pour utiliser le VCC, consultez le guide [ici](https://vcc.docs.vrchat.com/vpm/migrating).</TabItem>
+  <TabItem label="Mises à jour manuelles">Si vous utilisez le VCC, vous n'avez pas besoin de vous soucier des mises à jour manuelles.</TabItem>
+</Tabs>
+
+## SDK3 hérité
+:::tip[Attention !]
+Ces instructions ne s'appliquent qu'aux utilisateurs de notre SDK hérité (`Assets\\VRCSDK`).
+
+Si votre SDK se trouve dans votre dossier `Packages` (`Packages\\com.vrchat.base`), ne suivez pas les instructions ci-dessous.
+:::
+
+**Pour le SDK3, vous devriez pouvoir mettre à jour en important simplement le nouveau SDK sur l'ancien, également connu sous le nom de mise à jour sur place.** Cela est particulièrement important pour les Avatars SDK3, car vous pourriez perdre les comportements d'état sur vos animateurs si vous mettez à jour de manière incorrecte !
+
+Si vous voulez être super prudent, sauvegardez toujours vos projets avant de mettre à jour le SDK.
+
+### SDK3 - Monde
+1. Fermez Unity.
+2. Faites une sauvegarde de votre projet Unity ! Vous n'avez pas besoin de sauvegarder votre dossier Library, ces fichiers sont générés automatiquement par Unity.
+:::tip[Mise à jour de SDK3 pré-2020.3.2]
+
+**C'est une étape rare et vous n'avez probablement pas besoin de la faire.**
+
+Si vous mettez à jour à partir d'un SDK antérieur à la version 2020.3.2, rendez-vous dans le dossier `Assets` de votre projet et supprimez les dossiers `VRCSDK` et `Udon`, ainsi que les fichiers `VRCSDK.meta` et `Udon.meta`.
+:::
+3. Ouvrez votre projet Unity.
+4. Importez le nouveau SDK3 - Monde par-dessus l'ancien.
+
+
+### SDK3 - Avatars
+:::tip[Ne réalisez pas de "réinstallations par suppression" pour SDK3 - Avatars !]
+
+***Si vous supprimez les dossiers du SDK avec Unity fermé et ouvrez Unity sans le SDK installé, vous risquez de perdre des comportements d'état.*** Ils sont fragiles et ne persistent pas lors des réinstallations complètes. Veillez à sauvegarder vos projets régulièrement et à sauvegarder/documenter vos configurations de comportements d'état.\n\n Si vous devez absolument réaliser une réinstallation complète de votre package SDK3-Avatars, sauvegardez d'abord votre projet. Vous devrez configurer de nouveau vos comportements d'état, assurez-vous donc de les avoir bien documentés.
+:::
+1. Fermez Unity.
+2. Faites une sauvegarde de votre projet Unity ! Vous n'avez pas besoin de sauvegarder votre dossier Library, ces fichiers sont générés automatiquement par Unity.
+3. Ouvrez votre projet Unity.
+4. Importez le nouveau SDK3 - Avatars par-dessus l'ancien. Si vous obtenez des erreurs après l'importation, essayez de redémarrer Unity.
+
+:::tip[Erreurs attendues du SDK3 lors de la mise à jour de la dynamique des avatars]
+Il est prévu que certaines erreurs se produisent lorsque vous mettez à jour pour la première fois le SDK3-Avatars vers le SDK de la dynamique d'avatar. Cela est dû au fait que le SDK installe les packages Burst et Mathematics durant le processus d'installation, et qu'Unity s'empresse de les importer tôt.\n\nSi vous corrigez les erreurs ou redémarrez Unity, elles devraient disparaître.
+:::
+
+
+### SDK3 - Avatars - Processus de projet séparé
+Si vous rencontrez des problèmes pour effectuer la mise à jour en suivant le processus ci-dessus, essayez cette méthode :
+1. Fermez Unity.
+2. Créez un nouveau projet vierge.
+3. Importez le nouveau package SDK3 - Avatars dans ce projet.
+4. Fermez ce projet Unity.
+5. En utilisant l'explorateur de fichiers (ne pas ouvrir Unity encore !), supprimez les dossiers VRCSDK3 du projet que vous souhaitez mettre à niveau. Jusqu'à nouvel ordre de ce guide, ***n'ouvrez pas Unity.***
+6. À partir du nouveau projet vierge dans lequel vous avez importé le SDK, copiez les dossiers VRCSDK3 dans votre projet à mettre à niveau.
+7. Une fois la copie terminée, ouvrez Unity et chargez votre projet mis à niveau. Vous pouvez supprimer le projet vierge.
+
+### Processus de mise à jour avancé
+
+Si vous réinstallez le SDK dans un projet contenant un monde avec des configurations de déclencheurs complexes, voici une méthode plus sécurisée pour mettre à jour votre SDK.
+
+1. Fermez Unity.
+2. Sauvegardez votre projet dans un autre dossier (vous n'avez pas besoin de sauvegarder le dossier Library, ces fichiers sont générés automatiquement par Unity).
+3. Supprimez les dossiers SDK et Plugins, ainsi que les fichiers .META correspondants.
+4. Créez un nouveau projet Unity factice.
+5. Installez le dernier SDK dans le projet factice.
+6. Copiez les dossiers SDK / Plugin nouvellement ajoutés et les fichiers .META correspondants du projet factice dans votre projet d'origine.
+7. Voilà, c'est fait. Vous pouvez maintenant ouvrir votre projet mis à jour, et il ne devrait pas y avoir de plantages, peu importe la complexité de votre travail avec les déclencheurs !
+
+## Mise à jour de Unity
+
+Si vous effectuez une mise à jour à partir d'une version antérieure d'Unity, nous avons [un guide dédié à la mise à jour](/sdk/migrating-to-a-newer-minor-unity-version/) vers notre dernière version prise en charge !

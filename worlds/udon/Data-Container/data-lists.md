@@ -1,0 +1,2 @@
+
+Les fonctions des listes de données ne sont que des enveloppes pour les listes C# sous-jacentes, donc la documentation des listes C# s'applique également si vous recherchez des détails spécifiques. Les listes de données peuvent être sérial
