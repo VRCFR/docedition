@@ -36,7 +36,11 @@ FYI: nous avons inclus quelques icônes par défaut que vous pouvez utiliser dan
 * **Radial Puppet** - Ouvre un menu de marionnettes radiales qui contrôle un seul paramètre à virgule flottante, un peu comme une barre de progression que vous pouvez remplir ! La valeur flottante est de 0.0 à 1.0.
 :::note
 
-Les **contrôles de marionnettes** utilisent la [**synchronisation IK**](/avatars/animator-parameters#sync-types) lorsqu'ils sont ouverts. Si vous souhaitez une synchronisation aussi proche que possible de vos entrées pour des mouvements rapides, vous devez utiliser un menu de marionnettes.\n\n**Bouton**/**Toggle** utilise la **synchronisation lisible** qui se met à jour à la demande, au lieu de manière continue, et convient aux choses que vous "allumez/éteignez" mais dont vous n'avez pas besoin d'une synchronisation très précise.\n\nLa synchronisation du menu de marionnettes se met toujours à jour à la fréquence maximale disponible, et elle lisse les valeurs pour les utilisateurs à distance - bien mieux lorsque la réplication temporelle est importante.",
+Les **contrôles de marionnettes** utilisent la [**synchronisation IK**](/avatars/animator-parameters#sync-types) lorsqu'ils sont ouverts. Si vous souhaitez une synchronisation aussi proche que possible de vos entrées pour des mouvements rapides, vous devez utiliser un menu de marionnettes.
+
+**Bouton**/**Toggle** utilise la **synchronisation lisible** qui se met à jour à la demande, au lieu de manière continue, et convient aux choses que vous "allumez/éteignez" mais dont vous n'avez pas besoin d'une synchronisation très précise.
+
+La synchronisation du menu de marionnettes se met toujours à jour à la fréquence maximale disponible, et elle lisse les valeurs pour les utilisateurs à distance - bien mieux lorsque la réplication temporelle est importante.",
   "title": "Synchronisation du menu de marionnettes"
 :::
 Les contrôles de marionnettes peuvent également définir un paramètre lors de l'entrée dans le menu.

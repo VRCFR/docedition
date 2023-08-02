@@ -26,14 +26,20 @@ Si votre avatar diffère grandement d'un humain (par exemple, un quadrupède, un
 
 :::caution Si les os des pouces, des index et des majeurs ne sont pas mappés, la fonction Full-Body IK sera désactivée.
 
-**Cet avertissement n'apparaît pas pour les avatars du SDK3, car ils n'ont aucun problème à utiliser des armatures sans os de doigts.** Cette erreur ne se produit que lors de l'utilisation du SDK VRChat2, qui est obsolète et ne doit pas être utilisé.\n\nPour bénéficier de la pleine IK (permettant de se baisser et de placer automatiquement les pieds), vous devez avoir ces trois os de doigts mappés. Si vous ignorez cet avertissement, votre avatar ne pourra pas se baisser et ses pieds ne se placeront pas automatiquement (sauf si vous utilisez un déplacement par le contrôleur).\n\nCela empêchera également la lecture des remplacements d'animation personnalisés sur les gestes de la main. (Ceci n'est pas actuellement mentionné par l'avertissement du SDK.)
+**Cet avertissement n'apparaît pas pour les avatars du SDK3, car ils n'ont aucun problème à utiliser des armatures sans os de doigts.** Cette erreur ne se produit que lors de l'utilisation du SDK VRChat2, qui est obsolète et ne doit pas être utilisé.
+
+Pour bénéficier de la pleine IK (permettant de se baisser et de placer automatiquement les pieds), vous devez avoir ces trois os de doigts mappés. Si vous ignorez cet avertissement, votre avatar ne pourra pas se baisser et ses pieds ne se placeront pas automatiquement (sauf si vous utilisez un déplacement par le contrôleur).
+
+Cela empêchera également la lecture des remplacements d'animation personnalisés sur les gestes de la main. (Ceci n'est pas actuellement mentionné par l'avertissement du SDK.)
 :::
 
 ### Hiérarchie de la colonne vertébrale
 
 :::danger Votre rig a le torse supérieur (Upper Chest) mappé dans le rig humanoïde. Cela causera des problèmes avec l'IK.
 
-**Cet avertissement n'apparaît pas pour les avatars du SDK3, car ils n'ont aucun problème à utiliser des armatures avec un torse supérieur mappé.** Cette erreur ne se produit que lors de l'utilisation du SDK VRChat2, qui est obsolète et ne doit pas être utilisé.\n\nSi vous devez utiliser le SDK2, laissez l'os du torse supérieur vide lors de la configuration de votre rig humanoïde.
+**Cet avertissement n'apparaît pas pour les avatars du SDK3, car ils n'ont aucun problème à utiliser des armatures avec un torse supérieur mappé.** Cette erreur ne se produit que lors de l'utilisation du SDK VRChat2, qui est obsolète et ne doit pas être utilisé.
+
+Si vous devez utiliser le SDK2, laissez l'os du torse supérieur vide lors de la configuration de votre rig humanoïde.
 :::
 
 :::danger Des éléments manquent dans la hiérarchie de la colonne vertébrale. Assurez-vous que le bassin, la colonne vertébrale, le torse, le cou et les épaules sont mappés.
@@ -50,7 +56,11 @@ Pour que l'IK fonctionne correctement, vous devez avoir une hiérarchie spécifi
 
 :::caution Le LowerArm (avant-bras) n'est pas le premier enfant de l'UpperArm (bras supérieur) ou la Main n'est pas le premier enfant du LowerArm (avant-bras) : vous pouvez rencontrer des problèmes avec les rotations de l'avant-bras.
 
-Le système IK de VRChat examine le premier enfant d'un os pour déterminer la disposition des os. Si vous avez d'autres os enfants, comme des os de placement d'accessoires ou des os de torsion dans votre rig, ils peuvent perturber l'IK. Dans ce cas particulier, le SDK détecte que votre LowerArm n'est pas le premier enfant répertorié de votre os UpperArm.\n\nPour résoudre ce problème, déplacez l'os enfant en première position dans la liste des enfants de l'os parent. **Vous devrez déballer votre prefab d'avatar pour cela.**\n\nNotez que ce message nomme l'emplacement, pas le nom de l'os réel dans votre rig, vous devrez donc regarder pour voir quel os se trouve dans cet emplacement.
+Le système IK de VRChat examine le premier enfant d'un os pour déterminer la disposition des os. Si vous avez d'autres os enfants, comme des os de placement d'accessoires ou des os de torsion dans votre rig, ils peuvent perturber l'IK. Dans ce cas particulier, le SDK détecte que votre LowerArm n'est pas le premier enfant répertorié de votre os UpperArm.
+
+Pour résoudre ce problème, déplacez l'os enfant en première position dans la liste des enfants de l'os parent. **Vous devrez déballer votre prefab d'avatar pour cela.**
+
+Notez que ce message nomme l'emplacement, pas le nom de l'os réel dans votre rig, vous devrez donc regarder pour voir quel os se trouve dans cet emplacement.
 :::
 
 :::caution Le LowerLeg (jambe inférieure) n'est pas le premier enfant de l'UpperLeg (cuisse) ou le Foot (pied) n'est pas le premier enfant du LowerLeg (jambe inférieure) : vous pouvez rencontrer des problèmes avec les rotations du tibia.

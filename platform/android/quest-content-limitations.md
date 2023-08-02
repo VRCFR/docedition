@@ -50,7 +50,13 @@ Les composants suivants ne sont pas pris en charge sur Quest et ne fonctionneron
 | Lecteurs vidéo          | Fonctionne avec certaines limitations. En savoir plus dans [Lecteurs vidéo](/worlds/udon/video-players). |
 | Post-traitement         | Les systèmes de post-traitement sont entièrement désactivés dans VRChat Quest. Le GPU n'est pas conçu pour gérer ces effets très bien. |
 | Sources audio           | Les sources audio sont entièrement désactivées sur les avatars dans VRChat Quest. Les sources audio consomment une quantité significative de ressources CPU et les voix ont la priorité. |
-| Objets physiques        | Les rigidbodies, les colliders et les joints sont entièrement désactivés sur les avatars dans VRChat Quest. \n\n Ils sont autorisés dans les mondes, mais faites attention à ne pas en abuser. |
+| Objets physiques        | Les rigidbodies, les colliders et les joints sont entièrement désactivés sur les avatars dans VRChat Quest. 
+
+ Ils sont autorisés dans les mondes, mais faites attention à ne pas en abuser. |
 | Systèmes de particules  | Les particules sont fortement limitées sur les avatars dans VRChat Quest, avec des paramètres reflétant les [Limites du système de particules de l'avatar](https://docs.vrchat.com/docs/avatar-particle-system-limits) sur PC. |
-| Contraintes             | Les contraintes sont entièrement désactivées sur les avatars dans VRChat Quest. Il n'y a pas de plans pour les activer pour la Quest, car elles ont des problèmes de performances complexes qui ne sont pas résolus par une limite douce ou dure.\n\nAutorisé pour une utilisation dans les mondes. Faites attention à ne pas en abuser, car elles ont un impact sur les performances plus important que ce qui était précédemment pensé, surtout avec les ressources limitées de la Quest. |
-| FinalIK                 | Les composants FinalIK personnalisés sont entièrement désactivés sur les avatars dans VRChat Quest.\n\nLes composants FinalIK sont une source illimitée d'utilisation des ressources. Nous n'avons pas actuellement l'intention de les activer sur Quest. |
+| Contraintes             | Les contraintes sont entièrement désactivées sur les avatars dans VRChat Quest. Il n'y a pas de plans pour les activer pour la Quest, car elles ont des problèmes de performances complexes qui ne sont pas résolus par une limite douce ou dure.
+
+Autorisé pour une utilisation dans les mondes. Faites attention à ne pas en abuser, car elles ont un impact sur les performances plus important que ce qui était précédemment pensé, surtout avec les ressources limitées de la Quest. |
+| FinalIK                 | Les composants FinalIK personnalisés sont entièrement désactivés sur les avatars dans VRChat Quest.
+
+Les composants FinalIK sont une source illimitée d'utilisation des ressources. Nous n'avons pas actuellement l'intention de les activer sur Quest. |
