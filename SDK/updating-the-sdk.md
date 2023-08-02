@@ -17,7 +17,7 @@ Si vous utilisez le VCC, vous n'avez pas besoin de vous soucier des mises à jou
 ## SDK3 hérité
 :::caution 
 
-Ces instructions s'appliquent uniquement aux utilisateurs de notre SDK hérité (`Assets\\VRCSDK`).
+Ces instructions s'appliquent uniquement aux utilisateurs de notre ancien SDK (`Assets\\VRCSDK`).
 Si votre SDK se trouve dans votre dossier `Packages` (`Packages\\com.vrchat.base`), ne suivez pas les instructions ci-dessous.
 :::
 
