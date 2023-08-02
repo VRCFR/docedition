@@ -48,7 +48,7 @@ Si vous voulez être très prudent, sauvegardez toujours vos projets avant de me
 Il est normal d'avoir quelques erreurs lors de la première mise à niveau du SDK3 pour les avatars vers le SDK Avatar Dynamics. Cela est dû au fait que le SDK installe les packages Burst et Mathematics lors du processus d'installation, et qu'Unity se précipite un peu en les important prématurément.\n\nSi vous supprimez les erreurs ou redémarrez Unity, elles devraient disparaître.
 :::
 
-### SDK3 - Avatars - Processus de projet séparé
+### SDK3 - Avatars - Créer un projet séparé
 Si vous rencontrez des problèmes lors de la mise à niveau via le processus décrit ci-dessus, essayez ceci à la place :
 1. Fermez Unity.
 2. Créez un nouveau projet vide.
