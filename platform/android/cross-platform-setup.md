@@ -8,7 +8,9 @@ Si vous avez besoin de plus de détails sur la manière de procéder correctemen
 
 :::caution
 
-Avec l'avènement de la base de données des ressources v2, le passage d'une plateforme à une autre ne prend plus autant de temps ! La duplication de votre projet n'est plus vraiment nécessaire. Vous pouvez passer cette étape.\n\nVous pouvez également utiliser [EasyQuestSwitch](https://github.com/JordoVR/EasyQuestSwitch), qui facilite encore davantage le passage d'une plateforme à une autre.
+Avec l'avènement de la base de données des ressources v2, le passage d'une plateforme à une autre ne prend plus autant de temps ! La duplication de votre projet n'est plus vraiment nécessaire. Vous pouvez passer cette étape.
+
+Vous pouvez également utiliser [EasyQuestSwitch](https://github.com/JordoVR/EasyQuestSwitch), qui facilite encore davantage le passage d'une plateforme à une autre.
 :::
 
 Nous supposerons que vous avez déjà configuré un projet VRChat PC avec votre monde ou votre avatar. Si ce n'est pas le cas, vous devrez d'abord configurer et créer votre projet pour PC. Vous pouvez également commencer par créer une version Android/Quest, mais c'est à vous de décider.
@@ -46,7 +48,9 @@ Vous pouvez également consulter certaines de nos documentations sur l'optimisat
 
 :::caution Composants SyncVideoStream et SyncVideoPlayer
 
-Les composants SyncVideoStream et SyncVideoPlayer ne sont actuellement pas pris en charge sur Quest. Les inclure dans un monde Quest provoquera des problèmes graves ! Il suffit de les supprimer de la version Quest. Cependant, avoir un lecteur vidéo uniquement dans la version PC peut également causer des problèmes. Si le Maître de l'instance est un utilisateur Quest, vous rencontrerez d'autres problèmes.\n\nBien que la possibilité de lire des vidéos synchronisées sur Quest soit un objectif à terme, nous vous recommandons de ne pas les utiliser tant que nous n'aurons pas de support officiel sur cette plateforme.
+Les composants SyncVideoStream et SyncVideoPlayer ne sont actuellement pas pris en charge sur Quest. Les inclure dans un monde Quest provoquera des problèmes graves ! Il suffit de les supprimer de la version Quest. Cependant, avoir un lecteur vidéo uniquement dans la version PC peut également causer des problèmes. Si le Maître de l'instance est un utilisateur Quest, vous rencontrerez d'autres problèmes.
+
+Bien que la possibilité de lire des vidéos synchronisées sur Quest soit un objectif à terme, nous vous recommandons de ne pas les utiliser tant que nous n'aurons pas de support officiel sur cette plateforme.
 :::
 
 # Téléchargement du contenu

@@ -55,7 +55,11 @@ La version Oculus Quest de VRChat présente quelques exceptions à cette liste. 
 ## [Root Motion (FinalIK)](http://www.root-motion.com/finalikdox/html/index.html)
 :::caution Composants FinalIK Modifiés
 
-VRChat a grandement modifié son implémentation de FinalIK. Par conséquent, ces composants peuvent ne pas fonctionner comme documenté.\n\nNous ne soutenons pas directement ou ne testons pas les implémentations personnalisées de FinalIK sur les avatars. Cependant, elles *devraient* fonctionner correctement, et si nous devons intentionnellement en désactiver un ou plusieurs d'entre eux, nous ferons de notre mieux pour informer les créateurs. \n\nSi vous découvrez un bogue, veuillez [nous en informer](https://feedback.vrchat.com).
+VRChat a grandement modifié son implémentation de FinalIK. Par conséquent, ces composants peuvent ne pas fonctionner comme documenté.
+
+Nous ne soutenons pas directement ou ne testons pas les implémentations personnalisées de FinalIK sur les avatars. Cependant, elles *devraient* fonctionner correctement, et si nous devons intentionnellement en désactiver un ou plusieurs d'entre eux, nous ferons de notre mieux pour informer les créateurs. 
+
+Si vous découvrez un bogue, veuillez [nous en informer](https://feedback.vrchat.com).
 :::
 - [Aim IK](http://www.root-motion.com/finalikdox/html/page1.html)
 - [Biped IK](http://www.root-motion.com/finalikdox/html/page4.html)

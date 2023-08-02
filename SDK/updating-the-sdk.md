@@ -17,7 +17,8 @@ Si vous utilisez le VCC, vous n'avez pas besoin de vous soucier des mises à jou
 ## SDK3 hérité
 :::caution 
 
-Ces instructions s'appliquent uniquement aux utilisateurs de notre SDK hérité (`Assets\\VRCSDK`).\nSi votre SDK se trouve dans votre dossier `Packages` (`Packages\\com.vrchat.base`), ne suivez pas les instructions ci-dessous.
+Ces instructions s'appliquent uniquement aux utilisateurs de notre ancien SDK (`Assets\\VRCSDK`).
+Si votre SDK se trouve dans votre dossier `Packages` (`Packages\\com.vrchat.base`), ne suivez pas les instructions ci-dessous.
 :::
 
 **Pour le SDK3, vous devriez pouvoir mettre à jour en important simplement le nouveau SDK par-dessus l'ancien, également appelé mise à niveau sur place.** C'est particulièrement important pour les avatars SDK3, car vous risquez de perdre les comportements d'état de vos animateurs en cas de mise à jour incorrecte !
@@ -29,7 +30,9 @@ Si vous voulez être très prudent, sauvegardez toujours vos projets avant de me
 2. Sauvegardez votre projet Unity ! Vous n'avez pas besoin de sauvegarder votre dossier Library, ces fichiers sont générés automatiquement par Unity.
 :::caution Mise à niveau SDK3 avant 2020.3.2
 
-**Cette étape est peu courante et vous n'aurez probablement pas besoin de la faire.** \n\nSi vous mettez à niveau à partir d'un SDK antérieur à 2020.3.2, allez dans le dossier `Assets` de votre projet et supprimez les dossiers `VRCSDK` et `Udon`, ainsi que les fichiers `VRCSDK.meta` et `Udon.meta`.
+**Cette étape est peu courante et vous n'aurez probablement pas besoin de la faire.** 
+
+Si vous mettez à niveau à partir d'un SDK antérieur à 2020.3.2, allez dans le dossier `Assets` de votre projet et supprimez les dossiers `VRCSDK` et `Udon`, ainsi que les fichiers `VRCSDK.meta` et `Udon.meta`.
 :::
 3. Ouvrez votre projet Unity.
 4. Importez le nouveau SDK3 - Monde par-dessus l'ancien.
@@ -37,7 +40,9 @@ Si vous voulez être très prudent, sauvegardez toujours vos projets avant de me
 ### SDK3 - Avatars
 :::danger Ne procédez pas à la "réinstallation par suppression" pour les avatars SDK3 !
 
-***Si vous supprimez les dossiers du SDK avec Unity fermé et ouvrez Unity sans le SDK installé, vous perdrez les comportements d'état.*** Ils sont fragiles et ne persistent pas lors de mises à jour complètes par suppression. Assurez-vous de sauvegarder souvent vos projets et de sauvegarder/documenter vos configurations de comportements d'état.\n\nSi vous devez absolument effectuer une réinstallation complète par suppression de votre package d'avatars SDK3, sauvegardez d'abord votre projet. Vous devrez configurer vos comportements d'état à nouveau, alors assurez-vous de bien les documenter.
+***Si vous supprimez les dossiers du SDK avec Unity fermé et ouvrez Unity sans le SDK installé, vous perdrez les comportements d'état.*** Ils sont fragiles et ne persistent pas lors de mises à jour complètes par suppression. Assurez-vous de sauvegarder souvent vos projets et de sauvegarder/documenter vos configurations de comportements d'état.
+
+Si vous devez absolument effectuer une réinstallation complète par suppression de votre package d'avatars SDK3, sauvegardez d'abord votre projet. Vous devrez configurer vos comportements d'état à nouveau, alors assurez-vous de bien les documenter.
 :::
 1. Fermez Unity.
 2. Sauvegardez votre projet Unity ! Vous n'avez pas besoin de sauvegarder votre dossier Library, ces fichiers sont générés automatiquement par Unity.
@@ -45,10 +50,12 @@ Si vous voulez être très prudent, sauvegardez toujours vos projets avant de me
 4. Importez le nouveau SDK3 - Avatars par-dessus l'ancien. Si vous rencontrez des erreurs après l'importation, essayez de redémarrer Unity par la suite.
 :::note Erreurs attendues lors de la mise à niveau SDK3 pour Avatar Dynamics
 
-Il est normal d'avoir quelques erreurs lors de la première mise à niveau du SDK3 pour les avatars vers le SDK Avatar Dynamics. Cela est dû au fait que le SDK installe les packages Burst et Mathematics lors du processus d'installation, et qu'Unity se précipite un peu en les important prématurément.\n\nSi vous supprimez les erreurs ou redémarrez Unity, elles devraient disparaître.
+Il est normal d'avoir quelques erreurs lors de la première mise à niveau du SDK3 pour les avatars vers le SDK Avatar Dynamics. Cela est dû au fait que le SDK installe les packages Burst et Mathematics lors du processus d'installation, et qu'Unity se précipite un peu en les important prématurément.
+
+Si vous supprimez les erreurs ou redémarrez Unity, elles devraient disparaître.
 :::
 
-### SDK3 - Avatars - Processus de projet séparé
+### SDK3 - Avatars - Créer un projet séparé
 Si vous rencontrez des problèmes lors de la mise à niveau via le processus décrit ci-dessus, essayez ceci à la place :
 1. Fermez Unity.
 2. Créez un nouveau projet vide.
