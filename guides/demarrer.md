@@ -9,7 +9,7 @@
 Bienvenue !
 Votre aventure de création sur **VRChat** commence ici !
 
-*Attention, vidéo uniquement en anglais*
+*Attention, vidéo uniquement disponible en anglais*
 <iframe src="https://www.youtube.com/embed/0u1g0TYoJsU" title="Create Avatars & World Projects - VRChat Creator Companion" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
 </iframe>
 

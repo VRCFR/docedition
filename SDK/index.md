@@ -46,7 +46,7 @@ Si des erreurs surviennent, même avec un projet vide tout juste créé, [veuill
 ## Étape 4 - Connexion
 Pour utiliser le SDK, vous devrez vous connecter. Pour ce faire, rendez-vous à `VRChat SDK > Afficher le panneau de contrôle > Authentification`. Vous pouvez vous connecter à votre compte VRChat ici.
 
-N'oubliez pas que vous devez posséder un compte VRChat avec au moins une "Nouvelle note de confiance utilisateur" [Trust Rank](https://docs.vrchat.com/docs/vrchat-safety-and-trust-system) pour pouvoir télécharger du contenu. Vous ne pouvez pas utiliser un compte Steam, Oculus ou Viveport pour télécharger du contenu.
+N'oubliez pas que vous devez posséder un compte VRChat avec au moins une "Nouvelle note de confiance utilisateur" [Trust Rank](https://docs.vrchat.com/docs/vrchat-safety-and-trust-system) pour pouvoir uploader du contenu. Vous ne pouvez pas utiliser un compte Steam, Oculus ou Viveport pour uploader du contenu.
 
 ### Que faire ensuite ?
 Votre projet est prêt ! Vous pouvez passer à la [Création de mondes](/worlds) ou à la [Création d'avatars](/avatars).
