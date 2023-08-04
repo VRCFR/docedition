@@ -6,21 +6,21 @@ Cette section est en attente de mises à jour ! Les noms des avatars et le syst�
 
 ![](https://files.readme.io/894b94a-MediumHeader_v4_Friends.png "MediumHeader_v4_Friends.png")
 
-Le système de Confiance et de Sécurité de VRChat est une nouvelle extension du système de Confiance VRChat actuellement mis en œuvre. Il est conçu pour protéger les utilisateurs contre les utilisateurs nuisibles qui utilisent des shaders d'espace d'écran, des sons ou des microphones bruyants, des effets de particules visuellement perturbants ou malveillants, et d'autres méthodes que quelqu'un pourrait utiliser pour perturber votre expérience dans VRChat.
+Le système de Confiance et de Sécurité de VRChat est une nouvelle extension du système de Confiance VRChat actuellement mis en œuvre. Il est conçu pour protéger les utilisateurs contre les utilisateurs nuisibles qui utilisent des shaders en plein écran, des sons ou des microphones bruyants, des effets de particules perturbants ou malveillants, et d'autres méthodes utilisées pour perturber votre expérience dans VRChat.
 
-Ce système est conçu pour **rendre le contrôle à l'utilisateur**, permettant aux utilisateurs de déterminer où, quand et comment ils voient différentes caractéristiques d'avatar qui peuvent être distrayantes ou malveillantes si elles sont utilisées de manière inappropriée.
+Ce système est conçu pour **rendre le contrôle à l'utilisateur**, permettant aux utilisateurs de déterminer où, quand et comment ils shouaitent voir différentes caractéristiques d'avatar, qui peuvent être distrayantes ou malveillantes si elles sont utilisées de manière inappropriée.
 
 Il est important de noter que ce système est actuellement en **BÊTA**, et qu'il peut changer à chaque mise à jour ou patch.
 
 <iframe src='https://gfycat.com/ifr/LinearInfantileAmericancrayfish' frameborder='0' scrolling='no' allowfullscreen width='600' height='453'></iframe>
 
-Le système de Confiance et de Sécurité est conçu de telle sorte que, même en laissant les paramètres par défaut, le système s'assure que quelqu'un ne peut pas vous attaquer avec des caractéristiques d'avatar malveillantes. Les utilisateurs malveillants ne verront pas ces caractéristiques, vous permettant ainsi de vivre une bonne expérience dans le métaverse.
+Le système de Confiance et de Sécurité est conçu de telle sorte que, même en laissant les paramètres par défaut, le système s'assure que quelqu'un ne peut pas vous attaquer avec des caractéristiques d'avatar malveillantes. Les utilisateurs malveillants ne verront pas ces caractéristiques, vous permettant ainsi de profiter d'une bonne expérience dans le métaverse.
 
 Ce système se compose de deux composants essentiels : le système de Confiance et le système de Sécurité. Explorons-les un peu plus en détail.
 
 ### Le système de Confiance
 
-Le système de Confiance est déjà implémenté dans VRChat ! Il détermine quand un utilisateur est autorisé à télécharger du contenu - vous avez peut-être entendu parler de nous l'appelant "Content Gating" auparavant. Cependant, le système va bien au-delà de la simple détermination si vous pouvez télécharger du contenu - il examine le comportement de l'utilisateur pour déterminer la "Confiance", qui est un agrégat de nombreuses variables. Nous pouvons facilement ajuster la manière dont nous calculons cette valeur, donc nous pouvons la régler au fur et à mesure que le temps passe.
+Le système de Confiance est déjà implémenté dans VRChat ! Il détermine quand un utilisateur est autorisé à uploader du contenu - vous avez peut-être entendu parler de nous l'appelant "Content Gating" auparavant. Cependant, le système va bien au-delà de la simple détermination si vous pouvez uploader du contenu - il examine le comportement de l'utilisateur pour déterminer la "Confiance", qui est un agrégat de nombreuses variables. Nous pouvons facilement ajuster la manière dont nous calculons cette valeur, donc nous pouvons la régler au fur et à mesure que le temps passe.
 
 #### Rang de Confiance
 
@@ -34,7 +34,7 @@ Les rangs sont affichés sur les plaques nominatives lorsque vous ouvrez votre m
 
 Les **Amis** sont un Rang de Confiance spécial. Les utilisateurs que vous avez ajoutés en tant qu'Amis verront toutes leurs caractéristiques d'avatar affichées au niveau du Bouclier Normal, et vous pouvez les personnaliser comme n'importe quel autre Rang de Confiance.
 
-La transition entre "Visiteur" et "Nouvel Utilisateur" est spéciale - lorsque qu'un Visiteur devient un Nouvel Utilisateur, il acquiert la possibilité de télécharger du contenu sur VRChat tant qu'il utilise un compte VRChat. Les utilisateurs reçoivent une notification lorsqu'ils atteignent ce rang et sont dirigés vers la page de documentation de VRChat pour commencer à créer du contenu.
+La transition entre "Visiteur" et "Nouvel Utilisateur" est spéciale - lorsque qu'un Visiteur devient un Nouvel Utilisateur, il acquiert la possibilité de uploader du contenu sur VRChat tant qu'il utilise un compte VRChat. Les utilisateurs reçoivent une notification lorsqu'ils atteignent ce rang et sont dirigés vers la page de documentation de VRChat pour commencer à créer du contenu.
 
 Dans une version future, les utilisateurs recevront une notification lorsqu'ils passent d'un Rang de Confiance à un autre.
 
@@ -44,15 +44,13 @@ Par défaut, les utilisateurs "Connu" et "Digne de Confiance" afficheront leur r
 
 ![](https://files.readme.io/b89003f-ShowTrustRank_v3_toggle_wm.png "ShowTrustRank_v3_toggle_wm.png")
 
-En outre, il existe un rang spécial appelé "Ennui". Ces utilisateurs ont causé des problèmes aux autres, et auront un indicateur au-dessus de leur plaque nominative lorsque votre menu rapide est ouvert. La plupart du temps, les avatars de ces utilisateurs seront complètement bloqués. Vous ne les verrez probablement pas souvent - ce qui est une bonne chose !
+En outre, il existe un rang spécial appelé "Perturbateur". Ces utilisateurs ont causé des problèmes aux autres, et auront un indicateur au-dessus de leur plaque nominative lorsque votre menu rapide est ouvert. La plupart du temps, les avatars de ces utilisateurs seront complètement bloqués. Vous ne les verrez probablement pas souvent - ce qui est une bonne chose !
 
 Enfin, il existe un rang "Équipe VRChat", qui n'est utilisable que par les membres de l'équipe VRChat. Lorsqu'un membre de l'équipe VRChat a son tag "DEV" activé, vous verrez ce rang dans le menu rapide lorsque vous les sélectionnez. Si vous doutez qu'un utilisateur avec une étiquette "DEV" appartienne réellement à l'équipe VRChat, il vous suffit d'ouvrir votre menu rapide, de les sélectionner et de vérifier leur Rang de Confiance. S'il ne dit pas "Équipe VRChat" sous la miniature de l'avatar, alors cet utilisateur n'est pas membre de l'équipe VRChat et essaie probablement de tromper les utilisateurs. N'hésitez pas à prendre une capture d'écran et à les signaler à l'équipe de Modération !
 
 Si un membre de l'équipe VRChat n'a pas son tag "DEV" activé, il apparaîtra comme un utilisateur normal.
 
-### Que fait le
-
- système de Sécurité ?
+### Que fait le système de Sécurité ?
 
 "**Sécurité**" est un nouvel onglet de menu qui vous permet de configurer la manière dont les utilisateurs de chaque rang sont traités en ce qui concerne leur affichage dans VRChat. Cela affecte de nombreux aspects de la présence d'un utilisateur dans VRChat :
 
@@ -96,7 +94,7 @@ Vous pouvez **réinitialiser les paramètres personnalisés** que vous avez déf
 
 <iframe src='https://gfycat.com/ifr/MilkyHoarseGermanpinscher' frameborder='0' scrolling='no' allowfullscreen width='600' height='453'></iframe>
 
-Enfin, vous remarquerez peut-être que les paramètres pour le "Mode Sûr" dans le système ont disparu. C'est parce qu'ils ont été intégrés au système de Sécurité. En utilisant le raccourci clavier pour le "Mode Sûr" (Shift+Esc sur Bureau, les deux gâchettes + les deux boutons de menu en VR), vous passerez en mode "Niveau de Bouclier Personnalisé" et toutes les fonctions seront désactivées pour tous les rangs. Nous sommes conscients que ce comportement réinitialisera vos paramètres personnalisés, et nous prévoyons de mettre en place un "Niveau Sûr" dédié dans une future mise à jour.
+Enfin, vous remarquerez peut-être que les paramètres pour le "Mode Sûr" dans le système ont disparu. C'est parce qu'ils ont été intégrés au système de Sécurité. En utilisant le raccourci clavier pour le "Mode Sûr" (Shift+Esc en mode non VR, les deux gâchettes + les deux boutons de menu en VR), vous passerez en mode "Niveau de Bouclier Personnalisé" et toutes les fonctions seront désactivées pour tous les rangs. Nous sommes conscients que ce comportement réinitialisera vos paramètres personnalisés, et nous prévoyons de mettre en place un "Niveau Sûr" dédié dans une future mise à jour.
 
 #### Masquer ou afficher des utilisateurs spécifiques
 
@@ -104,9 +102,7 @@ Vous pouvez rencontrer un utilisateur qui, malgré son rang élevé, porte un av
 
 Si vous souhaitez que le système de Sécurité reprenne le contrôle de l'affichage de l'avatar, il vous suffit de cliquer sur "Utiliser les paramètres de Sécurité".
 
-**Vous pouvez désactiver tout le système si vous le souhaitez.** En sélectionnant le Niveau de Bouclier "Aucun", presque toutes les caracté
-
-ristiques seront affichées pour chaque rang, ou créez un Niveau de Bouclier Personnalisé avec toutes les caractéristiques activées pour tous les rangs. Cependant, nous ne recommandons pas d'utiliser ce paramètre à moins que vous n'ayez confiance en tout le monde dans la salle. Cela n'affecte pas les utilisateurs Nuisibles - leurs caractéristiques seront toujours masquées à moins que vous ne les affichiez explicitement.
+**Vous pouvez désactiver tout le système si vous le souhaitez.** En sélectionnant le Niveau de Bouclier "Aucun", presque toutes les caractéristiques seront affichées pour chaque rang, ou créez un Niveau de Bouclier Personnalisé avec toutes les caractéristiques activées pour tous les rangs. Cependant, nous ne recommandons pas d'utiliser ce paramètre à moins que vous n'ayez confiance en tout le monde dans la salle. Cela n'affecte pas les utilisateurs Nuisibles - leurs caractéristiques seront toujours masquées à moins que vous ne les affichiez explicitement.
 
 **Vous pouvez outrepasser ces paramètres individuellement pour chaque utilisateur** de deux manières. La première consiste à sélectionner un utilisateur dont l'avatar ou les caractéristiques sont masqués par les paramètres actuels de Sécurité, trouver "Afficher l'Avatar" et cliquer dessus. Cela affichera l'avatar et toutes les caractéristiques, quel que soit le mode de Sécurité que vous avez actuellement activé. "Masquer l'Avatar" fait l'inverse - quel que soit le mode de Sécurité sur lequel vous êtes, l'avatar de cet utilisateur sera masqué. Vous pouvez choisir "Utiliser les paramètres de Sécurité" pour que le mode de Sécurité que vous utilisez gère la visibilité de l'avatar de cet utilisateur.
 
@@ -122,7 +118,7 @@ Lorsqu'il est activé, le système de Sécurité passe en mode "Niveau de Boucli
 
 Pour désactiver le Mode Sûr, réglez votre système de Sécurité sur votre mode précédent. Si vous utilisiez le mode personnalisé, vous devrez réinitialiser manuellement vos paramètres précédents.
 
-### "Mode de Numérisation" du Menu Rapide
+### "Mode analyse" du Menu Rapide
 
 Lorsque vous ouvrez votre Menu Rapide, vous pourrez voir plus d'informations sur les plaques nominatives des utilisateurs, ainsi que des informations sur ces derniers. Cela agit comme un "scanner", fournissant plus d'informations lorsque votre Menu Rapide est ouvert. Si vous pointez vers un utilisateur, vous obtiendrez des informations rapides de base. En cliquant sur l'utilisateur, vous verrez plus de détails. Cela affichera leur miniature d'avatar, leur nom, leur rang affiché, ainsi que d'autres informations.
 
@@ -130,7 +126,7 @@ Lorsque vous ouvrez votre Menu Rapide, vous pourrez voir plus d'informations sur
 
 ![](https://files.readme.io/5793abc-1_oxRPBqCLG-oKruMr7XJJyQ.png "1_oxRPBqCLG-oKruMr7XJJyQ.png")
 
-Comme vous pouvez le voir en haut à gauche, l'image de l'avatar et le nom de l'utilisateur sont affichés. Leur Rang de Confiance est affiché sous la miniature de l'avatar, et la miniature est mise en évidence dans la couleur appropriée . À droite, vous pouvez voir leur statut actuel. La boîte de texte sous le statut est une "infobulle", qui vous donnera des informations utiles en fonction de ce que vous pointez du doigt.
+Comme vous pouvez le voir en haut à gauche, l'image de l'avatar et le nom de l'utilisateur sont affichés. Leur Rang de Confiance est affiché sous la miniature de l'avatar, et la miniature est mise en évidence dans la couleur appropriée. À droite, vous pouvez voir leur statut actuel. La boîte de texte sous le statut est une "infobulle", qui vous donnera des informations utiles en fonction de ce que vous pointez du doigt.
 
 Sélectionner un utilisateur ouvre un menu social plus détaillé.
 
